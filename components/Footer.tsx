@@ -3,13 +3,15 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <footer> 
+    <footer className='bg-[#020204]  '> 
   <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
   <hr className="my-6 border-gray-700 sm:mx-auto  lg:my-8" />
     <div className="md:flex md:justify-between">
       <div className="mb-6 md:mb-0">
         <Link href="/" className="flex items-center">
-        <img src='/images/logo.png' alt='Dataformer' width={120} height={40} />
+        <div className='text-3xl font-serif text-white'> <span className='font-bold '> DATA  </span> <span className='font-extralight text-2xl'>FORMER</span></div>
+
+        {/* <img src='/images/logo.png' alt='Dataformer' width={120} height={40} /> */}
           {/* <img
             src="/images/white_logo.png"
             className="h-8"

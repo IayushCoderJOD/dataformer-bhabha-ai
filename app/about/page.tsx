@@ -4,7 +4,9 @@ import React from 'react'
 
 function About() {
     return (
-        <div className="divide-y divide-gray-200 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl">
+      <div className='bg-[#020204] bg-opacity-100 h-screen text-white'>
+
+        <div className=" divide-y divide-gray-200 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-4xl font-extrabold leading-9 tracking-tight dark:first-letter:text-white">
             About Us
@@ -18,11 +20,12 @@ function About() {
       </p>
       {/* <br/>
       <p className="text-lg mt-4">
-        We believe that AI should be accessible to everyone and benefit society as a whole.
-      </p> */}
+      We believe that AI should be accessible to everyone and benefit society as a whole.
+    </p> */}
         </div>
 
       </div>
+    </div>
       )
 }
 
