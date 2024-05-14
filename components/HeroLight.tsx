@@ -33,12 +33,8 @@ function DatabaseIcon(props: DatabaseIconProps) {
 function  HeroLight() {
   return (
     <>
-<<<<<<< Updated upstream
-
-
-    {/* below commented code contains the different ui for ladning page that divides the page into two sections left-right [40-60%] */}
   {/* <div className="flex ">
-  <div className="bg-[#08080e] h-screen p-5 pt-0 pb-0 w-[60%] ">
+  <div className="bg-[#020204] h-screen p-5 pt-0 pb-0 w-[60%] ">
     <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
       <div className="container space-y-12">
         <div className="flex flex-col mb-16 items-center justify-center space-y-4 text-center">
@@ -86,8 +82,6 @@ function  HeroLight() {
   </div> 
 </div>
   */}
-=======
->>>>>>> Stashed changes
 <div className="flex relative">
   <div className="absolute inset-0 z-10 p-5 pt-0 pb-0 w-[45%]">
     <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
@@ -95,16 +89,8 @@ function  HeroLight() {
         <div className="flex flex-col mb-16 items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <p className="max-w-[800px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              
-            <div className="bg-[#020204]  py-4">
-    <div className="text-center">
-        <h1 className="text-white text-2xl font-bold">      
-              The all-in-one <br /> platform for dataset creation, curation, <br /> and cleaning, designed for training large language
-              models in AI.</h1>
-        <div className="mx-auto mt-2 h-1 w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"></div>
-    </div>
-</div>
-        
+              The all-in-one platform for dataset creation, curation, and cleaning, designed for training large language
+              models in AI.
             </p>
           </div>
         </div>
@@ -112,7 +98,7 @@ function  HeroLight() {
           <div className="flex flex-col items-center justify-center space-y-2">
             <DatabaseIcon className="h-10 w-10 text-white" />
             <div className="space-y-2 text-center">
-              <h3 className="text-lg font-bold text-white">Dataset Creation</h3>
+              <h3 className="text-lg font-bold">Dataset Creation</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Easily generate diverse and high-quality datasets for training AI models.
               </p>
@@ -121,7 +107,7 @@ function  HeroLight() {
           <div className="flex flex-col items-center justify-center space-y-2">
             <DatabaseIcon className="h-10  text-white w-10" />
             <div className="space-y-2 text-center">
-              <h3 className="text-lg font-bold text-white">Dataset Curation</h3>
+              <h3 className="text-lg font-bold">Dataset Curation</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Collaborate with teams to annotate, verify, and refine datasets for specific tasks.
               </p>
@@ -130,7 +116,7 @@ function  HeroLight() {
           <div className="flex flex-col items-center justify-center space-y-2">
             <DatabaseIcon className="h-10 w-10 text-white" />
             <div className="space-y-2 text-center">
-              <h3 className="text-lg font-bold text-white">Dataset Cleaning</h3>
+              <h3 className="text-lg font-bold">Dataset Cleaning</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Leverage automated tools to preprocess and clean noisy data for improved model performance.
               </p>
@@ -142,9 +128,10 @@ function  HeroLight() {
   </div>
   <div className="absolute inset-0 z-0">
     <Image className="w-full h-screen" src={backup_image2} alt=""/>
-  </div>   
+  </div> 
 </div>
-</>
+
+            </>
   );
 }
 

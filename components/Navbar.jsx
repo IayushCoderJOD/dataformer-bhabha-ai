@@ -13,7 +13,7 @@ function Navbar() {
 
         <nav className='flex w-full py-1 pb-5 justify-between items-center navbar'>
           <Link href='/'>
-          <div className='text-2xl text-white dm-sans-heading'><span className='font-bold' style={{ letterSpacing: '0.2em' }}>DATAFORMER</span></div>
+            <div className='text-2xl text-white dm-sans-heading'><span className='font-bold' style={{ letterSpacing: '0.2em' }}>DATAFORMER</span></div>
             {/* <img src='/images/logo.png' alt='Dataformer' width={180} height={60} /> */}
           </Link>
 
@@ -33,11 +33,7 @@ function Navbar() {
                 }}
                 className={`hover:underline text-2xl text-white rounded-xl p-2 ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
                   } ${nav.id === 'call'
-<<<<<<< Updated upstream
-                    ? 'bg-[#2b2826] text-white px-4 py-2 rounded-md cursor-pointer'
-=======
                     ? 'bg-[#000000] text-white border-2 border-white px-4 py-2 rounded-md cursor-pointer'
->>>>>>> Stashed changes
                     : ''
                   }`}
               >
