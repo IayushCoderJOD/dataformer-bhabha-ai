@@ -6,3 +6,10 @@
     background: #262321;
     color: #fdfbfb;
 }
+
+.dm-sans-heading {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
