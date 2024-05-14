@@ -1,10 +1,15 @@
-export const runtime = 'edge'
-import React from 'react'
+export const runtime = 'edge';
+import Navbar from '@/components/Navbar';
+import React from 'react';
 
 function Privacy() {
   return (
-    <div className='flex flex-col gap-4 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl'>
-    <h1 className='text-4xl'>Privacy Policy</h1>
+    <>
+    <div className='relative'>
+      <Navbar />
+    </div>
+      <div className=' text-white flex flex-col gap-4 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl'>
+        <h1 className='text-4xl'>Privacy Policy</h1>  
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>
 <h1 className='text-3xl'>Interpretation and Definitions</h1>
@@ -199,6 +204,8 @@ function Privacy() {
 </li>
 </ul>
     </div>
+    </>
+
   )
 }
 

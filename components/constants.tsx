@@ -12,6 +12,21 @@ export const navLinks = [
     href: "/contact",
   },
   {
+    id: "privacy",
+    title: "Privacy",
+    href: "/privacy",
+  },
+  {
+    id: "terms",
+    title: "Terms",
+    href: "/terms",
+  },
+  {
+    id: "discord",
+    title: "Discord",
+    href: "/discord",
+  },
+  {
     id: "call",
     title: "Book a Call",
     href: "https://cal.com/satpal/30min",

@@ -1,9 +1,13 @@
-export const runtime = 'edge'
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 function Terms() {
   return (
-    <div className='flex flex-col gap-4 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl'>
+    <>
+    <div className='relative'>
+    <Navbar />
+  </div>
+    <div className='text-white flex flex-col gap-4 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl'>
     <h1 className='text-4xl'>Terms & Conditions</h1>
 
 <p>Welcome to Dataformer!</p>
@@ -124,6 +128,7 @@ function Terms() {
 
 <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
     </div>
+    </>
   )
 }
 

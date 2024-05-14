@@ -1,13 +1,12 @@
 'use client'
-    import { useCallback } from "react";
-    import Particles from "react-tsparticles";
+import { useCallback } from "react";
 import { SVGProps } from 'react';
-import hero from "@/public/images/heroimg.jpg"
-    import type { Container, Engine } from "tsparticles-engine";
-    import { loadFull } from "tsparticles";
-import Image from "next/image";
+import Particles from "react-tsparticles";
+import type { Container, Engine } from "tsparticles-engine";
+import { loadFull } from "tsparticles";
+import Navbar from "./Navbar";
 
-    interface DatabaseIconProps extends SVGProps<SVGSVGElement> {}
+interface DatabaseIconProps extends SVGProps<SVGSVGElement> {}
 
 function DatabaseIcon(props: DatabaseIconProps) {
   return (
@@ -30,53 +29,34 @@ function DatabaseIcon(props: DatabaseIconProps) {
   );
 }
 
-// https://w0.peakpx.com/wallpaper/18/8/HD-wallpaper-black-blue-boxes-black.jpg
-    function Hero() {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        await loadFull(engine);
-    }, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        console.log(container);
-    }, []);
+function Hero() {
+const particlesInit = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+}, []);
 
-    return (
-        <>
-        <div className="relative z-10 mx-auto  overflow-hidden h-screen w-full ">
-                    {/* <div className="relative z-10 flex flex-col items-center justify-start mt-16 mb-16 text-center text-gray-200 tracking-tight">
-            <h1 className="text-[4rem] font-spline font-medium">
-            Unleash the power of <br/> intuitive finance
-            </h1>
-            <p className="max-w-[800px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mt-4">
-            Say goodbye to the outdated financial tools. Every small business owner, regardless of the background, can now manage their business like a pro. Simple. Intuitive. And never boring.
-            </p>
-            <div className="mt-8">
-            <button className="px-6 py-3 text-lg font-medium text-white bg-black rounded-md hover:bg-gray-800">
-            Join the waitlist
-            </button>
-            </div>
-            <div className="mt-4">
-            <a href="#learn-more" className="text-gray-400 hover:underline">
-            Learn more  
-            </a>
-            </div>
-        </div>   */}
-        <section className= " z-50 absolute w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
-      <div className="container space-y-12">
-        <div className="flex flex-col mb-16 items-center justify-center space-y-4 text-center">
-          <div className="items-center flex justify-center space-y-2">
-            <p className="max-w-[800px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-            <div className="w-1/2  py-4">
+const particlesLoaded = useCallback(async (container: Container | undefined) => {
+    console.log(container);
+}, []);
+
+return (
+    <div className="relative z-10 mx-auto w-full h-screen overflow-hidden hero-background">
+        <Navbar/>
+                <div className="relative z-10 flex flex-col items-center justify-start mt-16 mb-16 text-center text-gray-200 tracking-tight">
+        {/* <h1 className="text-[4rem] font-spline font-medium">
+        Unleash the power of <br/> intuitive finance
+        </h1> */}
+        <div className=" w-1/2  py-4">
     <div className="text-center ">
-        <h1 className="text-white text-2xl font-bold"> The all-in-one platform <br /> for dataset creation, curation, and cleaning, designed for training large language
+        <h1 className="text-white text-3xl font-bold"> The all-in-one platform <br /> for dataset creation, curation, and cleaning, designed for training large language
               models in AI.</h1>
         <div className="mx-auto mt-2 h-1 w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"></div>
     </div>
 </div>
-            </p>
-          </div>
-        </div>
-        <div className="container grid max-w-sm items-start gap-8 px-4 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+
+
+{/* .......................... */}
+<div className="mt-8 container grid max-w-sm items-start gap-8 px-4 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <div className="flex flex-col items-center justify-center space-y-2">
             <DatabaseIcon className="h-10 w-10 text-white" />
             <div className="space-y-2 text-center">
@@ -105,16 +85,61 @@ function DatabaseIcon(props: DatabaseIconProps) {
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div className="absolute inset-0 z-0">
-        <Image className="w-full h-screen"  src={hero} alt="hero image"/>
-    {/* <img className="w-screen h-screen" src="https://w0.peakpx.com/wallpaper/18/8/HD-wallpaper-black-blue-boxes-black.jpg" alt=""/> */}
-  </div> 
-        </div>
-       
-            </>
-    );
-    }
 
-    export default Hero;
+       
+       
+        
+    </div>  
+    <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        className="absolute inset-0 z-0"
+        options={{
+        fullScreen: { enable: false, zIndex: 0 },
+        fpsLimit: 120,
+        particles: {
+            color: {
+            value: "#d1d1d8",
+            },
+            move: {
+            enable: true,
+            direction: "top",
+            outModes: {
+                default: "out",
+            },
+            speed: 1,
+            },
+            number: {
+            value: 100,
+            },
+            opacity: {
+            value: 0.5,
+            random: true,
+            },
+            size: {
+            value: 1,
+            random: true,
+            },
+        },
+        interactivity: {
+                // events: {
+                //   onHover: {
+                //     enable: true,
+                //     mode: "repulse",
+                //   },
+                // },
+                // modes: {
+                //   repulse: {
+                //     distance: 100,
+                //     duration: 0.4,
+                //   },
+                // },
+        },
+        }}
+    />
+    </div>
+);
+}
+
+export default Hero;

@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
 
-    <div className='bg-[#08080e]  flex sticky sm:px-16 px-6 justify-center items-center  top-0 z-50'>
+    <div className='flex sticky sm:px-16 px-6 justify-center items-center  top-0 z-50'>
       <div className='xl:max-w-[1280px] w-full'>
 
         <nav className='flex w-full py-1 pb-5 justify-between items-center navbar'>
@@ -18,12 +18,13 @@ function Navbar() {
           </Link>
 
           {/* <img src='/images/white_logo.png' alt='logo'
-          width={50} height={50} />
+            width={50} height={50} />
 
-        <Link href='/' className='text-2xl mt-6'>habha AI</Link> */}
+          <Link href='/' className='text-2xl mt-6'>habha AI</Link> */}
 
           <ul className='list-none sm:flex hidden justify-end items-center flex-1 mt-6'>
             {navLinks.map((nav, index) => (
+
               <li
                 key={nav.id}
                 style={{

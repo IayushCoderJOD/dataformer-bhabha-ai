@@ -1,10 +1,14 @@
 export const runtime = 'edge'
+import Navbar from '@/components/Navbar'
 import React from 'react'
 // import { avatar } from '@/components/assets'
 
 function About() {
     return (
-      <div className='bg-[#08080e] bg-opacity-100 h-screen text-white'>
+      <div className=' bg-opacity-100 h-screen text-white'>
+        <div className='relative'>
+      <Navbar />
+    </div>
 
         <div className=" divide-y divide-gray-200 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
