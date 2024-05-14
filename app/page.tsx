@@ -13,8 +13,8 @@ export default function Home() {
         rel="stylesheet"/>
       </Head>
       <div>
-      {/* <Hero/> */}
-      <HeroLight/>
+      <Hero/>
+      {/* <HeroLight/> */}
     </div>
     </>
   )
