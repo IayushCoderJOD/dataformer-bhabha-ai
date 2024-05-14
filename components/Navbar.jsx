@@ -8,12 +8,12 @@ function Navbar() {
 
   return (
 
-    <div className='bg-[#020204]  flex sticky sm:px-16 px-6 justify-center items-center  top-0 z-50'>
+    <div className='bg-[#08080e]  flex sticky sm:px-16 px-6 justify-center items-center  top-0 z-50'>
       <div className='xl:max-w-[1280px] w-full'>
 
         <nav className='flex w-full py-1 pb-5 justify-between items-center navbar'>
           <Link href='/'>
-            <div className='text-3xl font-serif text-white'> <span className='font-bold '> DATA  </span> <span className='font-extralight text-2xl'>FORMER</span></div>
+          <div className='text-3xl font-serif text-white'> <span className='font-extralight '> DATAFORMER  </span>  </div>
             {/* <img src='/images/logo.png' alt='Dataformer' width={180} height={60} /> */}
           </Link>
 
@@ -28,7 +28,7 @@ function Navbar() {
                 key={nav.id}
                 className={`hover:underline text-2xl text-white rounded-xl p-2   ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
                   } ${nav.id === 'call'
-                    ? 'bg-[#2b2826] text-black px-4 py-2 rounded-md cursor-pointer'
+                    ? 'bg-[#2b2826] text-white px-4 py-2 rounded-md cursor-pointer'
                     : ''
                   }`}
               >
@@ -41,7 +41,7 @@ function Navbar() {
             {/* <li>
               <div className="md:block mx-5 flex transform  ">
                 <a href="#">
-                  <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl text-white hover:bg-white hover:text-black justify-center items-center">
+                  <button className="flex px-2.5 pt-px pb-0.5 border-white border-solid border-2 text-xl text-white hover:bg-white hover:text-white justify-center items-center">
                     <span>Sign in</span>
                     <svg
                       fill="none"

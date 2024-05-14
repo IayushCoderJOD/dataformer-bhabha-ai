@@ -3,11 +3,11 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div className='bg-[#020204] bg-opacity-100 h-screen text-white'>
+    <div className='bg-[#08080e] bg-opacity-100 h-screen text-white'>
 
     <div className="divide-y divide-gray-200 px-6 sm:px-8 lg:px-10 w-full mx-auto max-w-screen-xl">
     <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-      <h1 className="text-4xl font-extrabold leading-9 tracking-tight dark:text-white">
+      <h1 className="text-4xl font-extrabold leading-9 tracking-tight text-white">
         Contact Us
       </h1>
     </div>
