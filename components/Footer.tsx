@@ -9,7 +9,7 @@ function Footer() {
     <div className="md:flex md:justify-between">
       <div className="mb-6 md:mb-0">
         <Link href="/" className="flex items-center">
-        <div className='text-2xl text-white dm-sans-heading'><span className='font-bold' style={{ letterSpacing: '0.3em' }}>DATAFORMER</span></div>
+        <div className='text-2xl text-white dm-sans-heading'><span className='font-bold' style={{ letterSpacing: '0.2em' }}>DATAFORMER</span></div>
 
         {/* <img src='/images/logo.png' alt='Dataformer' width={120} height={40} /> */}
           {/* <img

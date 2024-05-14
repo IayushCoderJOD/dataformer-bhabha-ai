@@ -13,7 +13,7 @@ function Navbar() {
 
         <nav className='flex w-full py-1 pb-5 justify-between items-center navbar'>
           <Link href='/'>
-          <div className='text-3xl text-white dm-sans-heading'><span className='font-bold' style={{ letterSpacing: '0.2em' }}>DATAFORMER</span></div>
+          <div className='text-2xl text-white dm-sans-heading'><span className='font-bold' style={{ letterSpacing: '0.2em' }}>DATAFORMER</span></div>
             {/* <img src='/images/logo.png' alt='Dataformer' width={180} height={60} /> */}
           </Link>
 
