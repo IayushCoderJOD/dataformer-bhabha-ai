@@ -26,9 +26,18 @@ function Navbar() {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
-                className={`hover:underline text-2xl text-white rounded-xl p-2   ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
+                style={{
+                  background: nav.id === 'call'
+                    ? 'linear-gradient(90deg, rgba(10,0,89,1) 0%, rgba(94,195,225,1) 96%, rgba(0,212,255,1) 100%)'
+                    : undefined
+                }}
+                className={`hover:underline text-2xl text-white rounded-xl p-2 ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
                   } ${nav.id === 'call'
+<<<<<<< Updated upstream
                     ? 'bg-[#2b2826] text-white px-4 py-2 rounded-md cursor-pointer'
+=======
+                    ? 'bg-[#000000] text-white border-2 border-white px-4 py-2 rounded-md cursor-pointer'
+>>>>>>> Stashed changes
                     : ''
                   }`}
               >

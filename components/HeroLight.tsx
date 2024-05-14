@@ -33,6 +33,7 @@ function DatabaseIcon(props: DatabaseIconProps) {
 function  HeroLight() {
   return (
     <>
+<<<<<<< Updated upstream
 
 
     {/* below commented code contains the different ui for ladning page that divides the page into two sections left-right [40-60%] */}
@@ -85,6 +86,8 @@ function  HeroLight() {
   </div> 
 </div>
   */}
+=======
+>>>>>>> Stashed changes
 <div className="flex relative">
   <div className="absolute inset-0 z-10 p-5 pt-0 pb-0 w-[45%]">
     <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
@@ -92,8 +95,16 @@ function  HeroLight() {
         <div className="flex flex-col mb-16 items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <p className="max-w-[800px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              The all-in-one platform for dataset creation, curation, and cleaning, designed for training large language
-              models in AI.
+              
+            <div className="bg-[#020204]  py-4">
+    <div className="text-center">
+        <h1 className="text-white text-2xl font-bold">      
+              The all-in-one <br /> platform for dataset creation, curation, <br /> and cleaning, designed for training large language
+              models in AI.</h1>
+        <div className="mx-auto mt-2 h-1 w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"></div>
+    </div>
+</div>
+        
             </p>
           </div>
         </div>
@@ -131,10 +142,9 @@ function  HeroLight() {
   </div>
   <div className="absolute inset-0 z-0">
     <Image className="w-full h-screen" src={backup_image2} alt=""/>
-  </div> 
+  </div>   
 </div>
-
-            </>
+</>
   );
 }
 
