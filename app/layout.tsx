@@ -2,7 +2,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 const inter = Inter({ 
@@ -31,7 +30,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-white w-full ${inter.variable}`}>
         <div className='min-h-screen'>
-        {/* <Navbar/> */}
         <div className='w-full mx-auto'>
         {children}
         </div>

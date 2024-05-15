@@ -7,7 +7,7 @@
     color: #fdfbfb;
 }
 
-body {
+/* body {
   background: radial-gradient(ellipse at top, #100f25, #010101 80%);
 }
 
@@ -17,7 +17,7 @@ body {
               repeating-linear-gradient(90deg, rgba(60, 60, 60, 0.183), rgba(30, 30, 30, 0.2) 2px, transparent 2px, transparent 85px),
               repeating-linear-gradient(0deg, rgba(52, 52, 52, 0.2), rgba(30, 30, 30, 0.2) 2px, transparent 2px, transparent 85px);
   background-blend-mode: overlay;
-}
+} */
 
 .dm-sans-heading {
   font-family: "DM Sans", sans-serif;
@@ -26,7 +26,15 @@ body {
   font-style: normal;
 }
 
+.twitter-tweet {
+  max-width: 300px !important;
+  min-width: 300px !important;
+}
 
+.tweet-container {
+  max-height: 320px !important;
+  overflow: hidden;
+}
 .other-component-background{
   position: relative;
   background: radial-gradient(ellipse at top, rgba(171, 171, 171, 0.221), transparent 50%);
@@ -34,3 +42,15 @@ body {
 
 }
 
+
+body {
+  background: radial-gradient(ellipse at top, #100f25, #010101 80%);
+}
+
+.hero-background {
+  position: relative;
+  background: radial-gradient(ellipse at top, rgba(171, 171, 171, 0.221), transparent 50%),
+              repeating-linear-gradient(90deg, rgba(19, 14, 50, 0.2), rgba(42, 42, 58, 0.1) 2px, transparent 2px, transparent 90px),
+              repeating-linear-gradient(0deg, rgba(19, 14, 50, 0.2), rgba(42, 42, 58, 0.1) 2px, transparent 2px, transparent 90px);
+  background-blend-mode: overlay;
+}
