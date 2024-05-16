@@ -6,3 +6,38 @@
     background: #262321;
     color: #fdfbfb;
 }
+
+.dm-sans-heading {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.twitter-tweet {
+  max-width: 300px !important;
+  min-width: 300px !important;
+}
+
+.tweet-container {
+  max-height: 320px !important;
+  overflow: hidden;
+}
+.other-component-background{
+  position: relative;
+  background: radial-gradient(ellipse at top, rgba(171, 171, 171, 0.221), transparent 50%);
+  background-blend-mode: overlay;
+
+}
+
+body {
+  background: radial-gradient(ellipse at top, #100f25, #010101 80%);
+}
+
+.hero-background {
+  position: relative;
+  background: radial-gradient(ellipse at top, rgba(171, 171, 171, 0.221), transparent 50%),
+              repeating-linear-gradient(90deg, rgba(19, 14, 50, 0.2), rgba(42, 42, 58, 0.1) 2px, transparent 2px, transparent 90px),
+              repeating-linear-gradient(0deg, rgba(19, 14, 50, 0.2), rgba(42, 42, 58, 0.1) 2px, transparent 2px, transparent 90px);
+  background-blend-mode: overlay;
+}

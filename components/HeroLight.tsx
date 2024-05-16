@@ -1,6 +1,8 @@
 'use client'
 import Link from "next/link";
 import { SVGProps } from 'react';
+import herolight from "@/public/images/backup_image2.png"
+import Image from "next/image";
 
 interface DatabaseIconProps extends SVGProps<SVGSVGElement> {}
 
@@ -25,27 +27,30 @@ function DatabaseIcon(props: DatabaseIconProps) {
   );
 }
 
-function HeroLight() {
+function  HeroLight() {
   return (
+    <>
+ 
+<div className="flex relative">
+  <div className="absolute inset-0 z-10 p-5 pt-0 pb-0 w-[45%]">
     <section className="w-full py-12 md:py-24 lg:py-32 flex items-center justify-center">
       <div className="container space-y-12">
         <div className="flex flex-col mb-16 items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <p className="max-w-[800px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              The all-in-one platform for dataset creation, curation, and cleaning, designed for training large language
-              models in AI.
+        <div className="items-center flex justify-center space-y-2">
+            <p className="max-w-[800px] text-gray-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <div className="  py-4">
+    <div className="text-center ">
+        <h1 className="text-white text-2xl font-bold"> The all-in-one platform <br /> for dataset creation, curation, and cleaning, <br /> designed for training large language
+              models in AI.</h1>
+        <div className="mx-auto mt-2 h-1 w-full bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"></div>
+    </div>
+</div>
             </p>
           </div>
-          {/* <Link
-            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-            href="#"
-          >
-            Sign Up for Early Access
-          </Link> */}
         </div>
         <div className="container grid max-w-sm items-start gap-8 px-4 mx-auto sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
           <div className="flex flex-col items-center justify-center space-y-2">
-            <DatabaseIcon className="h-10 w-10" />
+            <DatabaseIcon className="h-10 w-10 text-white" />
             <div className="space-y-2 text-center">
               <h3 className="text-lg font-bold">Dataset Creation</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -54,7 +59,7 @@ function HeroLight() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center space-y-2">
-            <DatabaseIcon className="h-10 w-10" />
+            <DatabaseIcon className="h-10  text-white w-10" />
             <div className="space-y-2 text-center">
               <h3 className="text-lg font-bold">Dataset Curation</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -63,7 +68,7 @@ function HeroLight() {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center space-y-2">
-            <DatabaseIcon className="h-10 w-10" />
+            <DatabaseIcon className="h-10 w-10 text-white" />
             <div className="space-y-2 text-center">
               <h3 className="text-lg font-bold">Dataset Cleaning</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -72,22 +77,15 @@ function HeroLight() {
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
-          <Link
-            className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-            href="#"
-          >
-            Contact Sales
-          </Link>
-          <Link
-            className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-            href="#"
-          >
-            Tour the Platform
-          </Link>
-        </div> */}
       </div>
     </section>
+  </div>
+  <div className="absolute inset-0 z-0">
+    <Image className="w-full h-screen" src={herolight} alt=""/>
+  </div> 
+</div>
+
+            </>
   );
 }
 

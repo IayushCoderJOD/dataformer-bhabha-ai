@@ -40,7 +40,7 @@ export default function MobileMenu() {
             index === navLinks.length - 1 ? 'mb-0' : 'mb-4'
           } ${
             nav.id === 'call'
-              ? 'bg-[#2b2826] text-white px-4 py-2 rounded-md cursor-pointer'
+              ? ' text-white px-4 py-2 cursor-pointer'
               : ''
           }`}
         >
@@ -56,5 +56,4 @@ export default function MobileMenu() {
   
 )
 }
-
 

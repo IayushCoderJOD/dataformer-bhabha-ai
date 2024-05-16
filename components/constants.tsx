@@ -15,7 +15,12 @@ export const navLinks = [
     id: "call",
     title: "Book a Call",
     href: "https://cal.com/satpal/30min",
-  }
+  },
+  {
+    id: "discord",
+    title: "Discord",
+    href: "/discord",
+  },
 ];
 
 export const stats = [
