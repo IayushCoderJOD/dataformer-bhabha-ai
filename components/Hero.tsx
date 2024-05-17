@@ -135,13 +135,14 @@ Book a call
       <Image className="w-[80%] rounded-xl" src={image_section} alt="" />
     </div>
     {/* image section ends here */}
+
+
     {/* below is the testimonial section */}
 
     <div className="flex justify-center mt-20">
-        <h1 className="text-4xl text-white">Testimonials</h1>
+        <h1 className="text-4xl text-white">Why Synthetic Data?</h1>
     </div>
       <div className="rounded-b-2xl ml-8 mt-10 w-[90%]">
-      
 {/* Render slider once tweets are loaded */}
   <Slider {...settings}>
           <div className="px-1">
@@ -191,7 +192,7 @@ Book a call
           </div>
         </Slider>
       </div>
-    </>
+            </>
 );
 }
 

@@ -20,7 +20,7 @@
 }
 
 .tweet-container {
-  max-height: 320px !important;
+  max-height: 400px !important;
   overflow: hidden;
 }
 .other-component-background{
