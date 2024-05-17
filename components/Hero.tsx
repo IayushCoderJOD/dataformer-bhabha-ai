@@ -140,7 +140,7 @@ Book a call
     {/* below is the testimonial section */}
 
     <div className="flex justify-center mt-20">
-        <h1 className="text-4xl text-white">Testimonials</h1>
+        <h1 className="text-4xl text-white">Why Synthetic Data?</h1>
     </div>
       <div className="rounded-b-2xl ml-8 mt-10 w-[90%]">
 {/* Render slider once tweets are loaded */}
